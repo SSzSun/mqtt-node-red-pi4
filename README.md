@@ -34,7 +34,7 @@ Run `Node-red` || สั่งทำงาน `Node-red`
 ```sudo
 $ node-red
 ```
-หลังจากนั้่นให้ลองเข้า ip `localhost:1880` จะมีให้ใส่ `username` & `password` ที่เราตั้งในตอนติดตั้ง `node-red` <br>
+หลังจากนั้่นให้ลองเข้า ip `https://localhost:1880` จะมีให้ใส่ `username` & `password` ที่เราตั้งในตอนติดตั้ง `node-red` <br>
 **เสริม จะทำก็ได้หรือไม่ทำก็ได้<br>
 Run automatically at startup || เปิดอัตโนมัติตอนเปิด Pi
 ```sudo
