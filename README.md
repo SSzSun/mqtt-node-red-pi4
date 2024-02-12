@@ -8,39 +8,39 @@ node-red and Mqtt run on localhost || ทั้งหมดรันบนตั
 
 ## Installation && Getting started
 ```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 ```
 ### 1. Node-red
 ```bast
-$ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 ```
 ### 2. paho-mqtt
 ```bash
-$ sudo apt-get install python3-paho-mqtt
+sudo apt-get install python3-paho-mqtt
 ```
 ### 3. mosquitto
 ```bash
-$ sudo apt-get install mosquitto mosquitto-clients
+sudo apt-get install mosquitto mosquitto-clients
 ```
 ### Open Server mosquitto || เปิดใช้ Server mosquitto
 ```bash
-$ sudo systemctl enable mosquitto
-$ sudo systemctl start mosquitto
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
 ```
 
 ## Run Locally && Test
 Run `Node-red` || สั่งทำงาน `Node-red`
 ```sudo
-$ node-red
+node-red
 ```
 หลังจากนั้่นให้ลองเข้า ip `https://localhost:1880` จะมีให้ใส่ `username` & `password` ที่เราตั้งในตอนติดตั้ง `node-red` <br>
 **เสริม จะทำก็ได้หรือไม่ทำก็ได้<br>
 Run automatically at startup || เปิดอัตโนมัติตอนเปิด Pi
 ```sudo
-$ sudo systemctl enable nodered.service
+sudo systemctl enable nodered.service
 ```
 ลอง reboot เพื่อเช็คว่าใช้งานได้ไหม
 ```sudo
-$ sudo reboot
+sudo reboot
 ```
