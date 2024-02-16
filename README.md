@@ -31,16 +31,25 @@ sudo systemctl start mosquitto
 
 ## Run Locally && Test
 Run `Node-red` || สั่งทำงาน `Node-red`
-```sudo
+```bash
 node-red
 ```
 หลังจากนั้่นให้ลองเข้า ip `https://localhost:1880` จะมีให้ใส่ `username` & `password` ที่เราตั้งในตอนติดตั้ง `node-red` <br>
 **เสริม จะทำก็ได้หรือไม่ทำก็ได้<br>
 Run automatically at startup || เปิดอัตโนมัติตอนเปิด Pi
-```sudo
+```bash
 sudo systemctl enable nodered.service
 ```
 ลอง reboot เพื่อเช็คว่าใช้งานได้ไหม
-```sudo
+```bash
 sudo reboot
+```
+
+## Node-red install Node
+```
+node-red-dashboard
+node-red-contrib-ui-led
+node-red-contrib-ui-simple-level
+node-red-contrib-ui-digital-clock
+node-red-contrib-calc
 ```
