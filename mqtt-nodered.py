@@ -29,7 +29,7 @@ def on_message(client, userdata, msg):
     else:
         print(f'Enter Else\n---------')
         client.publish("status/wait", 2)
-        time.sleep(3)
+        time.sleep(5)
         print(f'Befor-loop\n---------')
         gpio_loop(5)
         print(f'After-loop\n---------')
