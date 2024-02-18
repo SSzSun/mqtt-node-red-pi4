@@ -3,6 +3,7 @@ import RPi.GPIO as GPIO
 import time
 
 LED_PIN = 16
+h = 0
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(LED_PIN, GPIO.OUT)
@@ -31,7 +32,9 @@ def on_message(client, userdata, msg):
         client.publish("status/wait", 2)
         time.sleep(5)
         print(f'Befor-loop\n---------')
-        gpio_loop(5)
+        # gpio_loop(5)
+        # num = int(input())
+        # output_co(num)
         print(f'After-loop\n---------')
         client.publish("pi/status", 1)
         print(f'After-publish\n---------')
@@ -42,6 +45,10 @@ def gpio_loop(x):
         time.sleep(0.5)
         GPIO.output(LED_PIN, GPIO.LOW)
         time.sleep(0.5)
+
+def output_co(n):
+    global h
+    client.publish("c/number", h)
 
 client = mqtt.Client()
 client.on_connect = on_connect
